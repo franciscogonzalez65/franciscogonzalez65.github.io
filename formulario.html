@@ -1,100 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Mi página web</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-        <h1>Francisco Javier Gonzalez</h1>
-        <ul>
-            <li>
-                <a href="./index.html">Página Principal</a>
-            </li>
-            <li>
-                <a href="./curriculum.html">Currículum Vitae</a>
-            </li>
-            <li>
-                <a href="./formulario.html">Formulario</a>
-            </li>
-            <li>
-                <a href="./video.html">Vídeo</a>
-            </li>
-        </ul>
-        </div>
-    </header>
-    <form action="ejemplo.php" method="get">
-        <fieldset>
-            <legend>Datos de contacto</legend>
-        <label>Nombre: <input type="text" name="nombre" 
-       size="40"></label>
-       <label>Apellidos: <input type="text" name="nombre" 
-        size="40" placeholder="Escriba sus apellidos"></label>
-        <p><label>Fecha de nacimiento: <input type="date" name="nacido"></label></p>
-        <p>Sexo:
-            <input type="radio" name="hm" value="h"> Hombre
-            <input type="radio" name="hm" value="m"> Mujer
-        </p>
-        <label>Usuario: <input type="text" name="usuario" 
-            maxlength="15"></label>
-        <label>Contraseña: <input type="password" name="password" 
-            minlength="8"></label>
-            <p><label for="estadoCivil">Estado civil
-            <select name="menu" id="estadoCivil">
-                <option value="soltero" selected>Soltero/a</option>
-                <option value="casado">Casado/a</option>
-            </select></label></p>
-            <label for="nhijos">Hijos
-                <select name="menu" id="nhijos">
-                    <option value="">...</option>
-                    <option value="cero">0</option>
-                    <option value="uno">1</option>
-                    <option value="dos">2</option>
-                </select>
-            </label>
-        </fieldset>
-            <p>
-            <textarea name="texto" cols="30" rows="10" placeholder="Escriba algo"></textarea></p>
-            <p>
-                <input type="radio" name="mpl" value="m">
-                <input type="radio" name="mpl" value="p">
-                <input type="radio" name="mpl" value="l">
-            </p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reiniciar">
-    </form>
-    <footer>
-      <div class="footer">
-        <p class="nombrefooter">Mis redes sociales:</p>
-        <br />
-        <p class="iconospdp"></p>
-        <ul class="redes">
-          <li>
-            <a
-              target="blank"
-              href="https://twitter.com/?lang=es"
-              ><img class="twt" src="./imagenes/twitter.png" alt="Twitter"
-            /></a>
-          </li>
-          <li>
-            <a
-              target="blank"
-              href="https://www.instagram.com/?hl=es"
-              ><img class="ig" src="./imagenes/Instagram.webp" alt="instagram"
-            /></a>
-          </li>
-          <li>
-              <a target="blank" href="https://github.com/franciscogonzalez65">
-                  <img class="git" src="./imagenes/git.png" alt="github">
-              </a>
-          </li>
-        </ul>
+    <div class="header">
+        <header>
+          <h1>Francisco Javier Gonzalez</h1>
+          <nav>
+            <ul>
+              <li>
+                <a class="links" href="./index.html">Página Principal</a>
+              </li>
+              <li>
+                <a class="links" href="./curriculum.html">Currículum Vitae</a>
+              </li>
+              <li>
+                <a class="links" href="./formulario.html">Formulario</a>
+              </li>
+              <li>
+                <a class="links" href="./video.html">Vídeo</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
       </div>
-    </footer>
-  </div>
-</body>
-</html>
+      <nav class="formulario">
+        <form>
+         <label> <p>Nombre: <input class="nmbr" type="text" /></p></label>
+          <br />
+          <label><p>Apellidos: <input class="papellido" type="text" placeholder="Escriba sus apellidos"></p></label>
+          <br />
+          <label><p>Correo Electronico: <input class="correo" type="email" /></p></label>
+          <br />
+          <label><p>Número de Teléfono: <input class="tlf" type="tel" maxlength="9"></p></label>
+          <br />
+          <label><p>Dirección: <input class="direccion" type="text"></p> <br></label>
+            Tipo de jornada: <br />
+            <input class="radio" name="horas" type="radio" /> Media Jornada
+          </p>
+          <br />
+          <p><input name="horas" type="radio" /> Jornada Completa</p>
+          <p>
+            <textarea
+              class="textarea"
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Motivo de contacto "
+            ></textarea>
+          </p>
+          <br />
+          <div class="fecha">
+          <p>
+           Fecha para entrevista: <br />
+            <input class="semana" type="date" />
+          </p>
+          <p>
+            <input class="enviar" type="submit" />
+            <input class="reset" type="reset" />
+          </p>
+          </div>
+        </form>
+      </nav>
+          <footer>
+            <div class="footer">
+              <p class="nombrefooter">Mis redes sociales:</p>
+              <br>
+              <p class="iconospdp"></p>
+              <ul class="redes">
+                <li>
+                  <a target="blank" href="https://twitter.com/?lang=es"><img class="twt" src="./imagenes/twitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                  <a target="blank" href="https://www.instagram.com/?hl=es"><img class="ig" src="./imagenes/Instagram.webp" alt="instagram"></a>
+                </li>
+                <li><a target="blank" href="https://github.com/franciscogonzalez65"><img class="git" src="./imagenes/git.png" alt="github">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </body>
+      </html>
